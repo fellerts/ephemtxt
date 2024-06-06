@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ephemtxt"
+version = "0.1.0"
+description = "ephemtxt: an ephemeral text box. "
+authors = [
+    {name = "Fredrik Flornes Ellertsen", email = "fellerts@fastmail.com"}
+]
+dependencies = [
+    "PyQt5>=5.15",
+	'pyqtdarktheme'
+]
+readme = "README.md"
+
+[project.scripts]
+ephemtxt = "ephemtxt:main"
+
+[project.entry-points.console_scripts]
+ephemtxt = "ephemtxt:main"
